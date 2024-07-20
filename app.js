@@ -1,21 +1,21 @@
-alert(1 + 1);
-console.log("hello world!!!");
+// alert(1 + 1);
+// console.log("hello world!!!");
 
-// if (1 + 1 === 2) {
-//   console.log("di dalam pembanding");
-// }
-// console.log("setelah pembanding");
+if (1 + 1 === 2) {
+  console.log("di dalam pembanding");
+}
+console.log("setelah pembanding");
 
 // IF
-// let angka = Math.random();
-// console.log(angka);
+let angka = Math.random();
+console.log(angka);
 
-// if (angka >= 0.5) {
-//   console.log("Angka Lebih dari 0.5");
-// }
-// if (angka <= 0.5) {
-//   console.log("Angka Lebih kecil dari 0.5");
-// }
+if (angka >= 0.5) {
+  console.log("Angka Lebih dari 0.5");
+}
+if (angka <= 0.5) {
+  console.log("Angka Lebih kecil dari 0.5");
+}
 
 // const iniHari = "sabtu";
 
