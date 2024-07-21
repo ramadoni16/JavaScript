@@ -1,13 +1,18 @@
-
-
-// CARA MEMBUAT OBJECT BERJALAN
-const orang = {
-  nama: "rama",
-  tanggalLahir: 16,
-  alamat: "Lampung Barat",
-};
-orang["nama"] = "doni";
-orang.tanggalLahir = 3;
-// menambahkan gender
-orang.gender = "Laki-Laki";
-console.log(orang);
+const shoppingCart = [
+  {
+    product: "vue.js",
+    price: 1.22,
+    quantity: 3,
+  },
+  {
+    product: "react.js",
+    price: 2.32,
+    quantity: 1,
+  },
+  {
+    product: "angular.js",
+    price: 3.32,
+    quantity: 2,
+  },
+];
+console.log(shoppingCart[0].price);
