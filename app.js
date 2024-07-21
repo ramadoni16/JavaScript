@@ -1,9 +1,9 @@
-// const orang = {
-//   nama: "rama",
-//   tanggalLahir: 16,
-//   alamat: "Lampung Barat",
-// };
-// console.log(orang);
+const orang = {
+  nama: "rama",
+  tanggalLahir: 16,
+  alamat: "Lampung Barat",
+};
+console.log(orang);
 
 const barang = {
   judul: "Sepatu",
@@ -16,4 +16,4 @@ const barang = {
     malaysia: 79,
   },
 };
-console.log(barang);
+console.log(barang.location.indonesia);
