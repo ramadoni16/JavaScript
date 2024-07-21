@@ -5,11 +5,10 @@
 // shift menghapus item dari paling awal array
 // unshift menambahkan item pada awal array
 
-// let barbel = [];
-// barbel.push(20, 15, 10, 5, 2.5);
-// console.log(barbel);
-
-let barbel = [];
-barbel.push(20, 15, 10, 5, 2.5);
-barbel.pop();
-console.log(barbel);
+let student = ["rama", "agus", "rahman", "surya"];
+student.unshift("Herbalife");
+student.unshift("puc");
+student.unshift("jne");
+student.shift();
+student[2] = "lampung";
+console.log(student);
