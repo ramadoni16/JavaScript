@@ -1,19 +1,13 @@
+
+
+// CARA MEMBUAT OBJECT BERJALAN
 const orang = {
   nama: "rama",
   tanggalLahir: 16,
   alamat: "Lampung Barat",
 };
+orang["nama"] = "doni";
+orang.tanggalLahir = 3;
+// menambahkan gender
+orang.gender = "Laki-Laki";
 console.log(orang);
-
-const barang = {
-  judul: "Sepatu",
-  harga: 200000,
-  isReady: true,
-  size: ["s", "m", "L", "xl"],
-  location: {
-    indonesia: 48,
-    singapore: 50,
-    malaysia: 79,
-  },
-};
-console.log(barang.location.indonesia);
