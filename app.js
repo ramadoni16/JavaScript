@@ -1,8 +1,19 @@
-const board = [
-  [null, null, "0"],
-  ["0", "x", null],
-  ["x", null, "0"],
-];
+// const orang = {
+//   nama: "rama",
+//   tanggalLahir: 16,
+//   alamat: "Lampung Barat",
+// };
+// console.log(orang);
 
-board[0][2];
-console.log(board);
+const barang = {
+  judul: "Sepatu",
+  harga: 200000,
+  isReady: true,
+  size: ["s", "m", "L", "xl"],
+  location: {
+    indonesia: 48,
+    singapore: 50,
+    malaysia: 79,
+  },
+};
+console.log(barang);
