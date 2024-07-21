@@ -1,40 +1,51 @@
 //Method yang dimiliki array
-// concat - menggabungkan array
-const array1 = ["a", "b", "c"];
-const array2 = ["d", "e", "f"];
-const array3 = array1.concat(array2);
-console.log(array3);
-
-// includes mencari suatu nilai di dalam array
-const hewan = [1, 2, 3];
-console.log(hewan.includes(2));
-// expected output: true
-const pets = ["cat", "dog", "bat"];
-console.log(pets.includes("cat"));
-// expected output: true
-console.log(pets.includes("at"));
-// expected output: false
-
-// indexOf sama kaya string.indexOf
-const nama = ["ori", "manggo", "mandarin", "nrg", "line 1000"];
-console.log(nama.indexOf("ori"));
-// expected output: 1
-// start from index 2
-console.log(nama.indexOf("mandarin"));
-// expected output: 4
-console.log(nama.indexOf("multivitamin"));
-// expected output: 1
 
 // join membuat suatu string dari sebuah array
+const avatar = ["api", "Air", "udara"];
+
+console.log(avatar.join());
+// Expected output: "api,Air,udara"
+
+console.log(avatar.join("*"));
+// Expected output: "apiAirudara"
+
+console.log(avatar.join("-"));
+// Expected output: "api-Air-udara"
+
 // reverse membalikkan urutan nilai dari array
+const number = ["1", "2", "3"];
+console.log("number:", number);
+// Expected output: "number:" Array ["1", "2", "3"]
+const reversed = number.reverse();
+console.log("reversed:", reversed);
+// Expected output: "reversed:" Array ["3", "2", "1"]
+
+// Careful: reverse is destructive -- it changes the original array.
+console.log("number:", number);
+// Expected output: "array1:" Array ["3", "2", "1"]
+
 // slice menyalin sebagian nilai dari array
+const hewan = ["semut", "macan", "unta", "bebek", "gajah"];
+console.log(hewan.slice(2));
+// expected output: Array ["unta", "bebek", "gajah"]
+console.log(hewan.slice(2, 4));
+// expected output: Array ["unta", "bebek"]
+console.log(hewan.slice(1, 5));
+// expected output: Array ["macan", "unta", "bebek", "gajah"]
+console.log(hewan.slice(-2));
+// expected output: Array ["bebek", "gajah"]
+console.log(hewan.slice(2, -1));
+// expected output: Array ["unta", "bebek"]
+console.log(hewan.slice());
+// expected output: Array ["semut", "macan", "unta", "bebek", "gajah"]
+
 // splice menghapus atau mengubah element
-// sort - mengurutkan nilai pada array
-const bulan = ["March", "Jan", "Feb", "Dec"];
-bulan.sort();
+const bulan = ["Jan", "March", "April", "June"];
+bulan.splice(1, 0, "Feb");
+// inserts at index 1
 console.log(bulan);
-// expected output: Array ["Dec", "Feb", "Jan", "March"]
-const angka = [1, 30, 4, 21, 100000];
-angka.sort();
-console.log(angka);
-// expected output: Array [1, 100000, 21, 30, 4]
+// expected output: Array ["Jan", "Feb", "March", "April", "June"]
+bulan.splice(5, 5, "Des");
+// replaces 1 element at index 4
+console.log(bulan);
+// expected output: Array ["Jan", "Feb", "March", "April", "May"]
