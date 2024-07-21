@@ -28,8 +28,8 @@
 
 const role = prompt("masukka role akun");
 
-if (role === "admin" || role === "spv") {
-  console.log("boleh mengaksesnyaa");
+if (role !== "admin" || role === "spv") {
+  console.log("akses di tolak");
 } else {
-  console.log("akses ditolak");
+  console.log("boleh mengaksesnyaa");
 }
