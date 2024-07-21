@@ -1,10 +1,15 @@
-// let playlist = ["fiersa", "ungu", "noah"];
-// console.log(playlist[2]);
+// Method yang dimiliki array
 
-let warna = ["hijau", "kuning", "kelab", "bu"];
-// console.log(warna);
-warna[0] = "merah";
-warna[2] = "hijau";
-warna[3] = "biru";
-warna[8] = "ungu";
-console.log(warna);
+// push menambahkan item pada akhir array
+// pop menghapus item dari paling akhir array
+// shift menghapus item dari paling awal array
+// unshift menambahkan item pada awal array
+
+// let barbel = [];
+// barbel.push(20, 15, 10, 5, 2.5);
+// console.log(barbel);
+
+let barbel = [];
+barbel.push(20, 15, 10, 5, 2.5);
+barbel.pop();
+console.log(barbel);
