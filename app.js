@@ -1,26 +1,7 @@
-// for (let i = 1; i <= 10; i++) {
-//   console.log("saya ada di dalam loop");
-//   console.log(i);
-// }
-
-// for (let i = 1; i <= 20; i += 2) {
-//   console.log(i);
-// }
-
-// for (let i = 1; i >= 0; i--) {
-//   console.log(i);
-// }
-
-// for (let i = 20; i >= 0; i -= 2) {
-//   console.log(i);
-// }
-
-// for (let i = 10; i <= 100000; i *= 10) {
-//   console.log(i);
-// }
-
-const animals = ["cat", "derr", "hog", "koala"];
-
-for (let i = 0; i < animals.length; i++) {
-  console.log(i, animals[i]);
+const pilihan = "abcd";
+for (let i = 1; i <= 10; i++) {
+  console.log(`${i}.Soal nomor ${i}:`);
+  for (let j = 0; j < pilihan.length; j++) {
+    console.log(`     ${pilihan[j]}. Pilihan Jawaban`);
+  }
 }
