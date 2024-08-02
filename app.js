@@ -1,32 +1,24 @@
-const fruits = ["Banana", "orange", "Apple", "Manggo"];
+const studentScore = {
+  Olivia: 20,
+  Liam: 13,
+  Emma: 40,
+  Noah: 18,
+  Amelia: 32,
+  Oliver: 10,
+  Ava: 11,
+  Elijah: 21,
+  Sophia: 14,
+  Mateo: 22,
+};
 
-// for (let i = 0; i < fruits.length; i++) {
-//   console.log(`Buah ${fruits[i]}`);
+// for (let student in studentScore) {
+//   console.log(`${student} memiliki skor ${studentScore[student]}`);
 // }
 
-// FOR OFF
-// for (let fruit of fruits) {
-//   console.log(`Buah ${fruit}`);
-// }
-
-const studentRow = [
-  ["Olivia", "Liam", "Emma", "Noah"],
-  ["Amelia", "Oliver", "Ava", "Elijah"],
-  ["Sophia", "Mateo", "Isabella", "Lucas"],
-];
-
-// for (let i = 0; i < studentRow.length; i++) {
-//   const row = studentRow[i];
-//   console.log(`Seat Row #${i + 1}`);
-
-//   for (let j = 0; j < row.length; j++) {
-//     // console.log(row[j]);
-//     console.log(`   ${row[j]}`);
-//   }
-// }
-
-for (let row of studentRow) {
-  for (let studen of row) {
-    console.log(studen);
-  }
+// MENCARI NILAI RATA-RATA
+let total = 0;
+let scores = Object.values(studentScore);
+for (let score of scores) {
+  total += score;
 }
+console.log(total / scores.length);
