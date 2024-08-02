@@ -1,24 +1,11 @@
-const studentScore = {
-  Olivia: 20,
-  Liam: 13,
-  Emma: 40,
-  Noah: 18,
-  Amelia: 32,
-  Oliver: 10,
-  Ava: 11,
-  Elijah: 21,
-  Sophia: 14,
-  Mateo: 22,
-};
+// salah satu blok penyusun fundamental dalam JavaScript (FUNCTION)
 
-// for (let student in studentScore) {
-//   console.log(`${student} memiliki skor ${studentScore[student]}`);
-// }
+// let lemparDadu = Math.floor(Math.random() * 6) + 1;
+// console.log(lemparDadu);
 
-// MENCARI NILAI RATA-RATA
-let total = 0;
-let scores = Object.values(studentScore);
-for (let score of scores) {
-  total += score;
+// let lemparDadu = console.log(lemparDadu);
+
+function lemparDadu() {
+  console.log(Math.floor(Math.random() * 6) + 1);
+  //   console.log(lemparDadu());
 }
-console.log(total / scores.length);
