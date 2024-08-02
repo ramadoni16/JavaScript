@@ -1,13 +1,11 @@
-// let num = 0;
-// while (num < 10) {
-//   console.log(num);
-//   num++;
+// let input = prompt("Hei, say something");
+// while (true) {
+//   input = prompt(input);
+//   if (input.toLocaleLowerCase() === "stop") break;
 // }
+// alert("ok");
 
-const Password = "Pass123";
-
-let guess = prompt("enter the password");
-while (guess !== Password) {
-  guess = prompt("enter the password");
+for (let i = 0; i < 10000; i++) {
+  console.log(i);
+  if (i === 100) break;
 }
-alert("congrats! the password is correct");
