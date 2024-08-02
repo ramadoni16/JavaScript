@@ -1,21 +1,32 @@
-let maximum = parseInt(prompt("Masukkan nilai maksimal!"));
-while (!maximum) {
-  maximum = parseInt(prompt("Masukkan nilai Maksimal!"));
-}
+const fruits = ["Banana", "orange", "Apple", "Manggo"];
 
-const targetNum = Math.floor(Math.random() * maximum) + 1;
-console.log(targetNum);
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(`Buah ${fruits[i]}`);
+// }
 
-let guess = parseInt(prompt("Isi dengan Tebakan pertama Kamu"));
-let attempts = 1;
+// FOR OFF
+// for (let fruit of fruits) {
+//   console.log(`Buah ${fruit}`);
+// }
 
-while (parseInt(guess) !== targetNum) {
-  attempts++;
-  if (guess > targetNum) {
-    guess = prompt("Terlalu tinggi! tebak lagi:");
-  } else {
-    guess = prompt("Terlalu Rendah! Tebak Lagi");
+const studentRow = [
+  ["Olivia", "Liam", "Emma", "Noah"],
+  ["Amelia", "Oliver", "Ava", "Elijah"],
+  ["Sophia", "Mateo", "Isabella", "Lucas"],
+];
+
+// for (let i = 0; i < studentRow.length; i++) {
+//   const row = studentRow[i];
+//   console.log(`Seat Row #${i + 1}`);
+
+//   for (let j = 0; j < row.length; j++) {
+//     // console.log(row[j]);
+//     console.log(`   ${row[j]}`);
+//   }
+// }
+
+for (let row of studentRow) {
+  for (let studen of row) {
+    console.log(studen);
   }
 }
-
-alert(`Selamat Tebakan Anda Benar ! Dengan percobaan ${attempts} kali`);
