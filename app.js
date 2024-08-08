@@ -1,6 +1,5 @@
-function nyanyi() {
-  console.log("cek");
-  console.log("DO RE MI...");
+function selamatPagi(name) {
+  console.log(`Halo, ${name} Selamat Pagi`);
 }
-nyanyi();
-nyanyi();
+
+selamatPagi("Rama");
