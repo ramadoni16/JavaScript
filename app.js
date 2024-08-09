@@ -1,17 +1,8 @@
-// const hasil = jumlahkan(1, 2);
+let programing = "JavaScript";
 
-// function jumlahkan(a, b) {
-//   const total = a + b;
-//   return total;
-// }
-// console.log(jumlahkan(5, 8));
-
-function jumlahkan(a, b) {
-  if (typeof a !== "number" || typeof b !== "number") {
-    // return false;
-    return "bukan angka";
-  }
-  return a + b;
+function typeSafe() {
+  let programing = "TypeScript";
+  console.log(programing);
 }
-console.log(jumlahkan("a", "b"));
-console.log(jumlahkan(3, 4));
+// console.log(programing);
+typeSafe();
